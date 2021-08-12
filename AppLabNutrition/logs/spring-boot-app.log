@@ -1,0 +1,49 @@
+2020-05-21 11:08:35.509  WARN 19280 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Natalia%20Manrique/.m2/repository/org/json/json/20190722/json-20190722.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Natalia%20Manrique/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2020-05-21 11:08:35.538  INFO 19280 --- [main] com.middleware.lab.LabApplicationTests   : Starting LabApplicationTests on DESKTOP-LI09J3L with PID 19280 (started by Natalia Manrique in D:\App\Lab\Middleware_LabNutrition)
+2020-05-21 11:08:35.539  INFO 19280 --- [main] com.middleware.lab.LabApplicationTests   : The following profiles are active: dev
+2020-05-21 11:08:40.003  INFO 19280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-05-21 11:08:40.339  INFO 19280 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 321ms. Found 16 JPA repository interfaces.
+2020-05-21 11:08:41.387  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'asyncConfiguration' of type [com.middleware.lab.AsyncConfiguration$$EnhancerBySpringCGLIB$$70dab563] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:41.782  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$EnhancerBySpringCGLIB$$2f3f8313] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:41.871  INFO 19280 --- [main] .w.s.a.s.AnnotationActionEndpointMapping : Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2020-05-21 11:08:41.902  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:41.980  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:42.019  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:42.022  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@76396509' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:42.036  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:42.052  INFO 19280 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-21 11:08:42.932  INFO 19280 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-05-21 11:08:43.476  INFO 19280 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.4.9.Final}
+2020-05-21 11:08:44.288  INFO 19280 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-05-21 11:08:45.763  INFO 19280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-05-21 11:08:45.797  WARN 19280 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-05-21 11:08:46.530  INFO 19280 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-05-21 11:08:46.883  INFO 19280 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-05-21 11:08:50.294  INFO 19280 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-05-21 11:08:50.335  INFO 19280 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-21 11:08:51.899  WARN 19280 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-05-21 11:08:52.675  INFO 19280 --- [main] com.middleware.provider.utils.Constants  : profile = dev
+2020-05-21 11:08:55.133  INFO 19280 --- [main] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2020-05-21 11:08:55.144  WARN 19280 --- [main] javax.xml.soap                           : Using deprecated META-INF/services mechanism with non-standard property: javax.xml.soap.MetaFactory. Property javax.xml.soap.SAAJMetaFactory should be used instead.
+2020-05-21 11:08:55.339  INFO 19280 --- [main] o.s.ws.soap.saaj.SaajSoapMessageFactory  : Creating SAAJ 1.3 MessageFactory with SOAP 1.1 Protocol
+2020-05-21 11:08:55.341  WARN 19280 --- [main] javax.xml.soap                           : Using deprecated META-INF/services mechanism with non-standard property: javax.xml.soap.MetaFactory. Property javax.xml.soap.SAAJMetaFactory should be used instead.
+2020-05-21 11:08:55.469  INFO 19280 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-05-21 11:08:56.558  INFO 19280 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fc2197d, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dec84e3, org.springframework.security.web.header.HeaderWriterFilter@561e8bab, org.springframework.security.web.authentication.logout.LogoutFilter@1b52f723, com.middleware.provider.security.jwt.JwtRequestFilter@109f95b1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b3b25ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d487147, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20bc72af, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a429813, org.springframework.security.web.session.SessionManagementFilter@46219104, org.springframework.security.web.access.ExceptionTranslationFilter@6ca6d195, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@11a8735d]
+2020-05-21 11:08:57.494  INFO 19280 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2020-05-21 11:08:57.597  WARN 19280 --- [main] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-21 11:08:58.003  INFO 19280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-05-21 11:08:58.084  INFO 19280 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-05-21 11:08:58.132  INFO 19280 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-05-21 11:08:58.754  INFO 19280 --- [main] com.middleware.lab.LabApplicationTests   : Started LabApplicationTests in 24.611 seconds (JVM running for 29.544)
+2020-05-21 11:09:01.152  INFO 19280 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2020-05-21 11:09:01.195  INFO 19280 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-21 11:09:01.200  INFO 19280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-05-21 11:09:01.228  INFO 19280 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

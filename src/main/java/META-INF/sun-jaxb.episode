@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb" if-exists="true" version="2.1">
+  <!--
+
+Este archivo ha sido generado por la arquitectura JavaTM para la implantación de la referencia de enlace (JAXB) XML v2.3.0 
+Visite <a href="https://javaee.github.io/jaxb-v2/">https://javaee.github.io/jaxb-v2/</a> 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2021.08.11 a las 10:06:28 AM COT 
+
+  -->
+  <bindings xmlns:tns="http://prolineapp.pe/" if-exists="true" scd="x-schema::tns">
+    <schemaBindings map="false">
+      <package name="lab.navasoft.model.soap"/>
+    </schemaBindings>
+    <bindings if-exists="true" scd="tns:loadbilldata">
+      <class ref="lab.navasoft.model.soap.Loadbilldata"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:loadbilldataResponse">
+      <class ref="lab.navasoft.model.soap.LoadbilldataResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getstockalm">
+      <class ref="lab.navasoft.model.soap.Getstockalm"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getstockalmResponse">
+      <class ref="lab.navasoft.model.soap.GetstockalmResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getpreciolista">
+      <class ref="lab.navasoft.model.soap.Getpreciolista"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getpreciolistaResponse">
+      <class ref="lab.navasoft.model.soap.GetpreciolistaResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getnewitems">
+      <class ref="lab.navasoft.model.soap.Getnewitems"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getnewitemsResponse">
+      <class ref="lab.navasoft.model.soap.GetnewitemsResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getitems">
+      <class ref="lab.navasoft.model.soap.Getitems"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getitemsResponse">
+      <class ref="lab.navasoft.model.soap.GetitemsResponse"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getstatuspedido">
+      <class ref="lab.navasoft.model.soap.Getstatuspedido"/>
+    </bindings>
+    <bindings if-exists="true" scd="tns:getstatuspedidoResponse">
+      <class ref="lab.navasoft.model.soap.GetstatuspedidoResponse"/>
+    </bindings>
+  </bindings>
+</bindings>

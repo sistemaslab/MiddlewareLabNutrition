@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://prolineapp.pe/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://prolineapp.pe/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+   <wsdl:types>
+      <s:schema elementFormDefault="qualified" targetNamespace="http://prolineapp.pe/">
+         <s:element name="loadbilldata">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="f" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="cdocu" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="loadbilldataResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="loadbilldataResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getstockalm">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="items" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getstockalmResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="getstockalmResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getpreciolista">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="items" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getpreciolistaResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="getpreciolistaResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getnewitems">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="1" maxOccurs="1" name="ultdias" type="s:int"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getnewitemsResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="getnewitemsResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getitems">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="items" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getitemsResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="getitemsResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getstatuspedido">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="nroped" type="s:string"/>
+                  <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="getstatuspedidoResponse">
+            <s:complexType>
+               <s:sequence>
+                  <s:element minOccurs="0" maxOccurs="1" name="getstatuspedidoResult" type="s:string"/>
+               </s:sequence>
+            </s:complexType>
+         </s:element>
+         <s:element name="string" nillable="true" type="s:string"/>
+      </s:schema>
+   </wsdl:types>
+   <wsdl:message name="loadbilldataSoapIn">
+      <wsdl:part name="parameters" element="tns:loadbilldata"/>
+   </wsdl:message>
+   <wsdl:message name="loadbilldataSoapOut">
+      <wsdl:part name="parameters" element="tns:loadbilldataResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getstockalmSoapIn">
+      <wsdl:part name="parameters" element="tns:getstockalm"/>
+   </wsdl:message>
+   <wsdl:message name="getstockalmSoapOut">
+      <wsdl:part name="parameters" element="tns:getstockalmResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getpreciolistaSoapIn">
+      <wsdl:part name="parameters" element="tns:getpreciolista"/>
+   </wsdl:message>
+   <wsdl:message name="getpreciolistaSoapOut">
+      <wsdl:part name="parameters" element="tns:getpreciolistaResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getnewitemsSoapIn">
+      <wsdl:part name="parameters" element="tns:getnewitems"/>
+   </wsdl:message>
+   <wsdl:message name="getnewitemsSoapOut">
+      <wsdl:part name="parameters" element="tns:getnewitemsResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getitemsSoapIn">
+      <wsdl:part name="parameters" element="tns:getitems"/>
+   </wsdl:message>
+   <wsdl:message name="getitemsSoapOut">
+      <wsdl:part name="parameters" element="tns:getitemsResponse"/>
+   </wsdl:message>
+   <wsdl:message name="getstatuspedidoSoapIn">
+      <wsdl:part name="parameters" element="tns:getstatuspedido"/>
+   </wsdl:message>
+   <wsdl:message name="getstatuspedidoSoapOut">
+      <wsdl:part name="parameters" element="tns:getstatuspedidoResponse"/>
+   </wsdl:message>
+   <wsdl:message name="loadbilldataHttpGetIn">
+      <wsdl:part name="f" type="s:string"/>
+      <wsdl:part name="fileName" type="s:string"/>
+      <wsdl:part name="cdocu" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="loadbilldataHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:message name="getstockalmHttpGetIn">
+      <wsdl:part name="items" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="getstockalmHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:message name="getpreciolistaHttpGetIn">
+      <wsdl:part name="items" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="getpreciolistaHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:message name="getnewitemsHttpGetIn">
+      <wsdl:part name="ultdias" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="getnewitemsHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:message name="getitemsHttpGetIn">
+      <wsdl:part name="items" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="getitemsHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:message name="getstatuspedidoHttpGetIn">
+      <wsdl:part name="nroped" type="s:string"/>
+      <wsdl:part name="tipo" type="s:string"/>
+   </wsdl:message>
+   <wsdl:message name="getstatuspedidoHttpGetOut">
+      <wsdl:part name="Body" element="tns:string"/>
+   </wsdl:message>
+   <wsdl:portType name="billdataSoap">
+      <wsdl:operation name="loadbilldata">
+         <wsdl:input message="tns:loadbilldataSoapIn"/>
+         <wsdl:output message="tns:loadbilldataSoapOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getstockalm">
+         <wsdl:input message="tns:getstockalmSoapIn"/>
+         <wsdl:output message="tns:getstockalmSoapOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getpreciolista">
+         <wsdl:input message="tns:getpreciolistaSoapIn"/>
+         <wsdl:output message="tns:getpreciolistaSoapOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getnewitems">
+         <wsdl:input message="tns:getnewitemsSoapIn"/>
+         <wsdl:output message="tns:getnewitemsSoapOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getitems">
+         <wsdl:input message="tns:getitemsSoapIn"/>
+         <wsdl:output message="tns:getitemsSoapOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getstatuspedido">
+         <wsdl:input message="tns:getstatuspedidoSoapIn"/>
+         <wsdl:output message="tns:getstatuspedidoSoapOut"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:portType name="billdataHttpGet">
+      <wsdl:operation name="loadbilldata">
+         <wsdl:input message="tns:loadbilldataHttpGetIn"/>
+         <wsdl:output message="tns:loadbilldataHttpGetOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getstockalm">
+         <wsdl:input message="tns:getstockalmHttpGetIn"/>
+         <wsdl:output message="tns:getstockalmHttpGetOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getpreciolista">
+         <wsdl:input message="tns:getpreciolistaHttpGetIn"/>
+         <wsdl:output message="tns:getpreciolistaHttpGetOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getnewitems">
+         <wsdl:input message="tns:getnewitemsHttpGetIn"/>
+         <wsdl:output message="tns:getnewitemsHttpGetOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getitems">
+         <wsdl:input message="tns:getitemsHttpGetIn"/>
+         <wsdl:output message="tns:getitemsHttpGetOut"/>
+      </wsdl:operation>
+      <wsdl:operation name="getstatuspedido">
+         <wsdl:input message="tns:getstatuspedidoHttpGetIn"/>
+         <wsdl:output message="tns:getstatuspedidoHttpGetOut"/>
+      </wsdl:operation>
+   </wsdl:portType>
+   <wsdl:binding name="billdataSoap" type="tns:billdataSoap">
+      <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+      <wsdl:operation name="loadbilldata">
+         <soap:operation soapAction="http://prolineapp.pe/loadbilldata" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstockalm">
+         <soap:operation soapAction="http://prolineapp.pe/getstockalm" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getpreciolista">
+         <soap:operation soapAction="http://prolineapp.pe/getpreciolista" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getnewitems">
+         <soap:operation soapAction="http://prolineapp.pe/getnewitems" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getitems">
+         <soap:operation soapAction="http://prolineapp.pe/getitems" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstatuspedido">
+         <soap:operation soapAction="http://prolineapp.pe/getstatuspedido" style="document"/>
+         <wsdl:input>
+            <soap:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:binding name="billdataSoap12" type="tns:billdataSoap">
+      <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+      <wsdl:operation name="loadbilldata">
+         <soap12:operation soapAction="http://prolineapp.pe/loadbilldata" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstockalm">
+         <soap12:operation soapAction="http://prolineapp.pe/getstockalm" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getpreciolista">
+         <soap12:operation soapAction="http://prolineapp.pe/getpreciolista" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getnewitems">
+         <soap12:operation soapAction="http://prolineapp.pe/getnewitems" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getitems">
+         <soap12:operation soapAction="http://prolineapp.pe/getitems" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstatuspedido">
+         <soap12:operation soapAction="http://prolineapp.pe/getstatuspedido" style="document"/>
+         <wsdl:input>
+            <soap12:body use="literal"/>
+         </wsdl:input>
+         <wsdl:output>
+            <soap12:body use="literal"/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:binding name="billdataHttpGet" type="tns:billdataHttpGet">
+      <http:binding verb="GET"/>
+      <wsdl:operation name="loadbilldata">
+         <http:operation location="/loadbilldata"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstockalm">
+         <http:operation location="/getstockalm"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getpreciolista">
+         <http:operation location="/getpreciolista"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getnewitems">
+         <http:operation location="/getnewitems"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getitems">
+         <http:operation location="/getitems"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+      <wsdl:operation name="getstatuspedido">
+         <http:operation location="/getstatuspedido"/>
+         <wsdl:input>
+            <http:urlEncoded/>
+         </wsdl:input>
+         <wsdl:output>
+            <mime:mimeXml part="Body"/>
+         </wsdl:output>
+      </wsdl:operation>
+   </wsdl:binding>
+   <wsdl:service name="billdata">
+      <wsdl:port name="billdataSoap" binding="tns:billdataSoap">
+         <soap:address location="http://181.65.167.118:8087/billdata/prod/billdata.asmx"/>
+      </wsdl:port>
+      <wsdl:port name="billdataSoap12" binding="tns:billdataSoap12">
+         <soap12:address location="http://181.65.167.118:8087/billdata/prod/billdata.asmx"/>
+      </wsdl:port>
+      <wsdl:port name="billdataHttpGet" binding="tns:billdataHttpGet">
+         <http:address location="http://181.65.167.118:8087/billdata/prod/billdata.asmx"/>
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>
