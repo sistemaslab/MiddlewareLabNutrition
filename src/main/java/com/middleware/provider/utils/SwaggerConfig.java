@@ -22,14 +22,14 @@ public class SwaggerConfig {
     public Docket api() {
         return new Docket(DocumentationType.SWAGGER_2).select()
             .apis(RequestHandlerSelectors
-                .basePackage("com.middleware.lab.controller"))
+                .basePackage("com.middleware.coolbox.controller"))
             .paths(PathSelectors.any())
             .build().apiInfo(apiEndPointsInfo());
     }
     private ApiInfo apiEndPointsInfo() {
-        return new ApiInfoBuilder().title("Middleware LAB NUTRITION REST API")
-            .description("Documentación integraciones Lab Nutrition ")
-            .contact(new Contact("Lab Nutrition", "", ""))
+        return new ApiInfoBuilder().title("Middleware Coolbox REST API")
+            .description("Documentación integraciones Coolbox ")
+            .contact(new Contact("BlackSip", "", ""))
             .license("Apache 2.0")
             .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
             .version("1.0.0")

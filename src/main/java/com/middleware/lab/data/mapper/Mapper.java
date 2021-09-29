@@ -513,10 +513,10 @@ public class Mapper {
         itemsDb.setMeasurement_unit(components.getMeasurementUnit());
         itemsDb.setName(components.getName());
         itemsDb.setQuantity(components.getQuantity());
-        itemsDb.setUnit_price((components.getPrice()));
+        itemsDb.setUnit_price(components.getPrice());
         itemsDb.setSelling_price(setPoint(components.getSellingPrice()));
         itemsDb.setIs_gift(false);
-        itemsDb.setTotal_price(((components.getPrice())).multiply(BigDecimal.valueOf(components.getQuantity().intValue())));
+        itemsDb.setTotal_price((components.getPrice()).multiply(BigDecimal.valueOf(components.getQuantity().intValue())));
         itemsDb.setOrderLab(orderLab);
         return itemsDb;
 
